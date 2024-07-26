@@ -76,4 +76,7 @@ const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
   );
 });
 
+// Adding the display name
+RecentProjects.displayName = 'RecentProjects';
+
 export default RecentProjects;

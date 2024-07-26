@@ -12,14 +12,14 @@ import Art from '@/components/Art';
 import ImageGrid from '@/components/ui/ImageGrid';
 
 
-const Creative = forwardRef<HTMLDivElement>((props, ref) => {
+const Creative = () => {
 
     return (
-        <main ref={ref} className={`font-mono flex min-h-screen flex-col items-center justify-between`}>
+        <main className={`font-mono flex min-h-screen flex-col items-center justify-between`}>
             <FloatingNav navItems={navItems2} />
             <ImageGrid />
         </main>
     );
-});
+};
 
 export default Creative;

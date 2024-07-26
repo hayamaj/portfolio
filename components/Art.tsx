@@ -6,9 +6,9 @@ import { projectz } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import React, { forwardRef } from 'react';
 
-const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
+const Art = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className="pb-8 mt-48" id="art">
+    <div ref={ref} className="pb-8 mt-48" id="/creative">
     <div className="flex flex-col sm:flex-row justify-center items-center">
     <h1 className="flex-1 flex text-black text-xl font-light uppercase justify-center text-center">
         creative
@@ -75,4 +75,8 @@ const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
   );
 });
 
-export default RecentProjects;
+
+// Adding the display name
+Art.displayName = 'Creative';
+
+export default Art;

@@ -4,16 +4,16 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
-import Link from "next/link";
-import VantaBackground from "./VantaBackground";
+import React, { forwardRef } from 'react';
 
-const RecentProjects = () => {
+const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="pb-8 mt-48" id="projects">
-      <h1 className="heading text-red-400 text-lg lowercase">RECENT PROJECTS {" "}
-        {/*<span className="text-metallic">recent projects.</span>*/}
+    <div ref={ref} className="pb-8 mt-48" id="projects">
+    <div className="flex flex-col sm:flex-row justify-center items-center">
+      <h1 className="flex-1 flex text-black text-xl font-light uppercase justify-center text-center">
+        software projects
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex-1 flex flex-wrap items-center justify-center p-4 gap-8 mt-10">
         {projects.map((projects) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
@@ -24,7 +24,7 @@ const RecentProjects = () => {
               title={projects.title}
               href={projects.link}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative shadow-md flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-none"
                   style={{ backgroundColor: "#000000" }}
@@ -38,9 +38,7 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base text-red-400 lowercase line-clamp-1">
-                {projects.title}
-              </h1>
+              
 
               <p
                 className="lg:text-sm lg:font-light font-light text-sm line-clamp-2"
@@ -52,12 +50,12 @@ const RecentProjects = () => {
                 {projects.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
+              <div className="flex mt-4 mb-3">
+                <div className="flex items-right">
                   {projects.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-white lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-white/[.2] rounded-full bg-white lg:w-10 lg:h-10 w-6 h-6 flex justify-right items-right"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
@@ -67,17 +65,15 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <FaLocationArrow className="ms-3 mx-4 w-8 h-8" color="#f87171" />
-                </div>
               </div>
             </PinContainer>
             </a>
           </div>
         ))}
       </div>
+      </div>
     </div>
   );
-};
+});
 
 export default RecentProjects;

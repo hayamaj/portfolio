@@ -1,33 +1,34 @@
+'use client';
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider";
-import VantaBackground from "@/components/VantaBackground";
+import { ReactLenis, useLenis } from '@/libs/lenis';
 
-const inter = Inter({ subsets: ["latin"] });
-
+{/*
 export const metadata: Metadata = {
   title: "Haya AlMajali",
   description: "my portfolio website",
 };
+*/}
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const lenis = useLenis(({ scroll }) => {
+    // called every scroll
+    console.log('scroll position:', scroll);
+  });
+
   return (
     <html lang="en">
-      <body className='${inter.className} bg-[#FAF9F6]'
+      <body className=''
  >
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
+            <ReactLenis root>
             {children}
-          </ThemeProvider></body>
+            </ReactLenis>
+          </body>
     </html>
   );
 }

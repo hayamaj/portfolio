@@ -5,7 +5,7 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FAF9F6] w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
       
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">

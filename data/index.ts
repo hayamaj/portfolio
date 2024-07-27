@@ -49,78 +49,65 @@ export const contentData = [
 export const images = [
   {
     id: 1,
-    title: "hi",
+    title: "Sattam AlMajali, 2019 (Oil on Canvas).",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP001.jpg",
     alt: "Image 1",
   },
   {
     id: 4,
-    title: "hi",
+    title: "Detail, 2023 (Oil on Canvas)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP002.jpg",
     alt: "Image 1",
   },
   {
     id: 2,
-    title: "hi",
+    title: "Commissioned Portrait I (Oil on Canvas)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP003.jpg",
     alt: "Image 1",
   },
   {
     id: 3,
-    title: "hi",
+    title: "Commissioned Portrait II (Oil on Canvas)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP004.jpg",
     alt: "Image 1",
   },
   {
     id: 5,
-    title: "hi",
+    title: "Jiddo & Teta (Digital Photo)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1718474884/image1_fnesv6.jpg",
     alt: "Image 1",
   },
     {
     id: 6,
-    title: "hi",
+    title: "Self-Portrait (Oil on Canvas)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191748/image-gallery/OP004XX.jpg",
     alt: "Image 6",
   },
   {
     id: 7,
-    title: "hi",
+    title: "CJ (Ink on Paper)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191749/image-gallery/IN001.jpg",
     alt: "Image 1",
   },
   {
     id: 8,
-    title: "hi",
+    title: "Jiddo (Digital Photo)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1718474889/image2_lleqfm.jpg",
     alt: "Image 1",
   },
   {
     id: 9,
-    title: "hi",
+    title: "Old Man's Hands (Pencil on Paper)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191748/image-gallery/PC002.jpg",
     alt: "Image 1",
   },
   {
     id: 10,
-    title: "hi",
-    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191727/image-gallery/2021-6_yqsasb.jpg",
-    alt: "Image 1",
-  },
-  {
-    id: 11,
-    title: "hi",
-    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707332436/image-gallery/PH001.jpg",
-    alt: "Image 1",
-  },
-  {
-    id: 12,
-    title: "hi",
-    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707332438/image-gallery/PH002.jpg",
+    title: "Family Tree (Digital Photo)",
+    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1722103822/image-gallery/kktn6wuyva7pt6iah4x1.png",
     alt: "Image 1",
   },
 ];
-
 
 
 export const projects = [

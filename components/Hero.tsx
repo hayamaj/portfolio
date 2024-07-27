@@ -32,7 +32,7 @@ const Hero = ({ projectsRef, creativeRef }: { projectsRef: React.RefObject<HTMLD
   };
     return (
       <ReactLenis root>
-        <div className="pb-20 pt-36">
+        <div className="pb-20 pt-24">
         
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center

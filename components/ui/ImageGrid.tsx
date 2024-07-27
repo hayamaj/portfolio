@@ -44,7 +44,7 @@ const ImageGrid = () => {
             <div key={image.id} id={`work-${image.id}`} className={`row ${rowClass}`}>
               <div className="block cursor-pointer" onClick={() => handleClick(image.id)}>
                 <div className="title mb-4">
-                  <h3 className="text-xl font-semibold">
+                  <h3 className="text-xs font-light">
                     <span>{image.title}</span>
                   </h3>
                 </div>

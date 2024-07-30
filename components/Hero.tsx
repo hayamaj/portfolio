@@ -41,7 +41,7 @@ const Hero = ({ projectsRef, creativeRef }: { projectsRef: React.RefObject<HTMLD
         <div className="flex justify-center relative my-20 z-10">
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                 <h2 className="uppercase tracking-widest text-xs text-center font-medium max-w-80 text-white">HEY-YA, LIKE THE SONG.</h2>
-                <TextGenerateEffect className="text-center text-3xl md:text-6xl lg:text-6xl" words={'HAYA ALMAJALI'} />
+                <TextGenerateEffect className="text-center text-3xl md:text-6xl lg:text-6xl drop-shadow-lg" words={'HAYA ALMAJALI'} />
                 <div className="flex flex-col my-8 monument-med">
                 <p 
                 className="mx-4 whitespace-nowrap lowercase text-center font-light drop-shadow-lg tracking-widest md:tracking-wider mb-4 text-xs md:text-lg lg:text-xl text-white mt-4 hover:underline cursor-pointer"

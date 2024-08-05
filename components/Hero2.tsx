@@ -1,5 +1,4 @@
 import React from 'react';
-import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import MagicButton from './ui/MagicButton';
 import { FaLinkedin, FaGithub, FaEnvelope, FaLocationArrow } from "react-icons/fa6";

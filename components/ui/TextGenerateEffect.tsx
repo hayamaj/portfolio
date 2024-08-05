@@ -37,10 +37,10 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              initial={{ opacity: 0, color: idx > 1 ? '#FFFFFF' : '#FAF9F6' }}
-              animate={{ opacity: 1, color: idx > 1 ? '#FFFFFF' : '#FAF9F6' }}
+              initial={{ opacity: 0, color: idx > 1 ? '#FBF6F4' : '#000000' }}
+              animate={{ opacity: 1, color: idx > 1 ? '#FBF6F4' : '#000000' }}
               transition={{ duration: 1, delay: idx * 0.2 }}
-              className={`dark:text-[#0D0628] ${idx > 1 ? 'text-[#FFFFFF] underline decoration-1 underline-offset-2' : 'text-[##FFFFFF]'} opacity-0`}
+              className={`dark:text-[#0D0628] uppercase ${idx > 1 ? 'text-[#FFFFFF] underline decoration-1 underline-offset-2' : 'text-[##FFFFFF]'} opacity-0`}
             >
               {word}{" "}
             </motion.span>
@@ -52,7 +52,7 @@ export const TextGenerateEffect = ({
 
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-medium", className)}>
       <div className="mt-4">
         <div className=" dark:text-white leading-snug tracking-wide">
           {renderWords()}

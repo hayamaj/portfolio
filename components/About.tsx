@@ -8,7 +8,7 @@ import MagicButton from "./ui/MagicButton";
 const About = () => {
   return (
     <div className=" py-48" id="about">
-      <h1 className="text-black text-xl font-light uppercase justify-center text-center">
+      <h1 className="text-black text-xl font-medium uppercase justify-center text-center">
         ABOUT ME
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-4">

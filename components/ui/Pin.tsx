@@ -50,7 +50,7 @@ export const PinContainer = ({
             transform: transform,
           }}
           // remove  bg-black
-          className="bg-white absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          className="bg-black absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
         >
           <div className={cn(" relative z-50", className)}>{children}</div>
         </div>

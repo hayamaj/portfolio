@@ -10,7 +10,7 @@ const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} className="pb-8 mt-48" id="projects">
     <div className="flex flex-col sm:flex-row justify-center items-center">
-      <h1 className="flex-1 flex text-black text-xl font-light uppercase justify-center text-center">
+      <h1 className="flex-1 flex text-black text-xl font-medium uppercase justify-center text-center">
         software projects
       </h1>
       <div className="flex-1 flex flex-wrap items-center justify-center p-4 gap-8 mt-10">
@@ -43,7 +43,7 @@ const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
               <p
                 className="lg:text-sm lg:font-light font-light text-sm line-clamp-2"
                 style={{
-                  color: "#333333",
+                  color: "#FFFFFF",
                   margin: "1vh 0",
                 }}
               >
@@ -55,7 +55,7 @@ const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
                   {projects.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-white lg:w-10 lg:h-10 w-6 h-6 flex justify-right items-right"
+                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-6 h-6 flex justify-right items-right"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}

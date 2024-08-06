@@ -40,7 +40,7 @@ const Hero = ({ projectsRef, creativeRef }: { projectsRef: React.RefObject<HTMLD
         <div className="flex justify-center relative my-20 z-10 custom-font">
             <div className="max-w-[100vw] md:max-w-4xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                 <h1 className="text-center text-4xl md:text-6xl lg:text-7xl my-4 uppercase" >Haya AlMajali</h1>
-                <h2 className="tracking-widest text-sm text-center font-normal max-w-80 my-4">( hey-ya, like <Link href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM" className="underline text-neutral-300">the song.</Link> )</h2>
+                <h2 className="tracking-widest text-sm text-center font-normal max-w-80 my-4">( hey-ya, like <Link href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM" className="underline text-neutral-400 hover:text-neutral-200">the song.</Link> )</h2>
 
                 <div className="flex flex-col my-4 mb-12">
                 <p 

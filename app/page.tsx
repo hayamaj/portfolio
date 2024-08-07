@@ -23,7 +23,7 @@ const Home = () => {
   });
   return (
     <ReactLenis root>
-      <div className="relative min-h-screen w-full">
+      <div className="relative min-h-screen w-full overflow-hidden">
       <div className="background-noise"></div>
         <main className="z-2 relative bg-[#FBF6F4] flex justify-center items-center flex-col overflow-hidden mx-auto min-h-screen w-full">
           <div className="w-full">

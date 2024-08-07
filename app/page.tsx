@@ -23,17 +23,19 @@ const Home = () => {
   });
   return (
     <ReactLenis root>
-    <main className="bg-[#FBF6F4] font-ibmPlexMono custom-font relative flex justify-center items-center flex-col overflow-hidden mx-auto min-h-screen w-full">
-      {/*<VantaBackground />*/}
-      <div className=" w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero projectsRef={projectsRef} creativeRef={creativeRef} />
-        <About />
-        <RecentProjects ref={projectsRef} />
-        <Art ref={creativeRef}/>
-        <Footer />
+      <div className="relative min-h-screen w-full">
+      <div className="background-noise"></div>
+        <main className="z-2 relative bg-[#FBF6F4] flex justify-center items-center flex-col overflow-hidden mx-auto min-h-screen w-full">
+          <div className="w-full">
+            <FloatingNav navItems={navItems} />
+            <Hero projectsRef={projectsRef} creativeRef={creativeRef} />
+            <About />
+            <RecentProjects ref={projectsRef} />
+            <Art ref={creativeRef} />
+            <Footer />
+          </div>
+        </main>
       </div>
-    </main>
     </ReactLenis>
   );
 };

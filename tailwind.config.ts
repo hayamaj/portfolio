@@ -82,24 +82,6 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        spotlight: {
-          "0%": {
-            opacity: "0",
-            transform: "translate(-72%, -62%) scale(0.5)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translate(-50%,-40%) scale(1)",
-          },
-        },
         shimmer: {
           from: {
             backgroundPosition: "0 0",
@@ -146,6 +128,19 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        noise: {
+          '0%': { transform: 'translate3d(0, 9rem, 0)' },
+          '10%': { transform: 'translate3d(-1rem, -4rem, 0)' },
+          '20%': { transform: 'translate3d(-8rem, 2rem, 0)' },
+          '30%': { transform: 'translate3d(9rem, -9rem, 0)' },
+          '40%': { transform: 'translate3d(-2rem, 7rem, 0)' },
+          '50%': { transform: 'translate3d(-9rem, -4rem, 0)' },
+          '60%': { transform: 'translate3d(2rem, 6rem, 0)' },
+          '70%': { transform: 'translate3d(7rem, -8rem, 0)' },
+          '80%': { transform: 'translate3d(-9rem, 1rem, 0)' },
+          '90%': { transform: 'translate3d(6rem, -5rem, 0)' },
+          '100%': { transform: 'translate3d(-7rem, 0, 0)' },
+        },
       },
       fontFamily: {
         ibmPlexMono: ['IBM Plex Mono', 'monospace'],
@@ -154,17 +149,7 @@ const config = {
         'custom': '1.5',
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        spotlight: "spotlight 2s ease .75s 1 forwards",
-        shimmer: "shimmer 2s linear infinite",
-        first: "moveVertical 30s ease infinite",
-        second: "moveInCircle 20s reverse infinite",
-        third: "moveInCircle 40s linear infinite",
-        fourth: "moveHorizontal 40s ease infinite",
-        fifth: "moveInCircle 20s ease infinite",
-        scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        noise: 'noise 1s steps(2) infinite',
       },
     },
   },
@@ -194,6 +179,8 @@ const config = {
       );
     },
   ],
+  tailwindcss: {},
+  autoprefixer: {},
 } satisfies Config;
 
 

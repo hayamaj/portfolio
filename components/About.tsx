@@ -14,7 +14,7 @@ const About = () => {
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-4">
       <div className="flex flex-col items-center justify-center p-4 gap-16 mt-4">
         <div className="flex flex-col items-center">
-          <div className="relative w-40 h-40 rounded-full overflow-hidden mb-10">
+          <div className="z-20 relative w-40 h-40 rounded-full overflow-hidden mb-10">
             <Image
               src="/profile.JPG" // Replace with your profile picture path
               alt="Profile Picture"

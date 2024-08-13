@@ -9,7 +9,7 @@ import React, { forwardRef } from 'react';
 const Art = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} className="pb-8 mt-48" id="/creative">
-    <div className="flex flex-col sm:flex-row justify-center items-center">
+    <div className="flex px-2 flex-col sm:flex-row justify-center items-center">
     <h1 className="flex-1 flex text-black text-xl font-medium uppercase justify-center text-center">
         creative
       </h1>

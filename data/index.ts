@@ -3,7 +3,7 @@ import About from '@/components/About';
 import { CldImage } from 'next-cloudinary';
 
 export const navItems = [
-    { name: "𖤐", link: "#home" },
+    { name: "scroll to top", link: "#home" },
 
   ];
 

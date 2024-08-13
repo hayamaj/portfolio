@@ -9,7 +9,7 @@ import React, { forwardRef } from 'react';
 const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} className="pb-8 mt-48" id="projects">
-    <div className="flex flex-col sm:flex-row justify-center items-center">
+    <div className="px-2 flex flex-col sm:flex-row justify-center items-center">
       <h1 className="flex-1 flex text-black text-xl font-medium uppercase justify-center text-center">
         software projects
       </h1>

@@ -19,7 +19,7 @@ const Navbar = () => {
               autoPlay
               loop
               muted
-              className="h-full w-full"
+              className="h-full w-full bg-transparent"
             />
         {/*
         <DotLottieReact

@@ -30,9 +30,9 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
                 <h1 className="font-light opacity-50">AI Integration and Solutions Engineer</h1>
                 <h1 className="font-light opacity-50">May 2023-Nov 2023</h1>
                 <ul className="justify-between max-w-2xl m-2">
-                <li className="font-light list-disc mt-6">Developed and optimized AI models for text generation and chatbot functionality by integrating OpenAI's GPT models (GPT-3,4) into Dakota’s web platform. </li>
-                <li className="font-light list-disc">Enhanced chatbot’s accuracy by 20% with tailored datasets. Improved response relevance by 30% through prompt engineering techniques aligned with business objectives.</li>
-                <li className="font-light list-disc">Utilized AI tools and libraries (NumPy, SciPy) to continuously monitor and optimize the chatbot's performance. </li>
+                <li className="font-light list-disc mt-6">Developed and optimized AI models for text generation and chatbot functionality by integrating OpenAI&apos;s GPT models (GPT-3,4) into Dakota&apos;s web platform. </li>
+                <li className="font-light list-disc">Enhanced chatbot&apos;s accuracy by 20% with tailored datasets. Improved response relevance by 30% through prompt engineering techniques aligned with business objectives.</li>
+                <li className="font-light list-disc">Utilized AI tools and libraries (NumPy, SciPy) to continuously monitor and optimize the chatbot&apos;s performance. </li>
                 </ul>
             </div>
             {/*job 3*/}

@@ -18,9 +18,10 @@ const ImageGrid = () => {
 
   return (
     
-    <section id="s-work" className="bg-[#FBF6F4] container mx-auto ">
-    <div className="flex justify-between items-center">
-          <h1 className="font-semibold text-xl">Art</h1>
+    <section id="s-work" className="bg-[#FBF6F4] container">
+      
+    <div className="flex w-screen max-w-2xl -my-24">
+          <h1 className="font-semibold text-xl mx-auto top-0">Art</h1>
       </div>
       <div className="projects mt-4">
         {images.map((image, index) => {

@@ -14,6 +14,7 @@ const WorkPage = () => {
 
     return (
         <main className={`bg-[#FBF6F4] min-h-screen`}>
+            <div className="background-noise"></div>
             <Navbar/>
             <FloatingNav navItems={navItems2} />
             <AllWork/>

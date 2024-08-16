@@ -16,7 +16,7 @@ import Navbar from '@/components/ui/Navbar';
 const CreativePage = () => {
 
     return (
-        <main className={`bg-[#FBF6F4] flex min-h-screen flex-col items-center justify-between`}>
+        <main className={`bg-[#FBF6F4] flex flex-col items-center min-h-screen overflow-visible`}>
             <Navbar/>
             <FloatingNav navItems={navItems2} />
             <ImageGrid />

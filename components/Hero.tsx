@@ -8,29 +8,13 @@ import { ReactLenis, useLenis } from '@/libs/lenis';
 
 
 
-const Hero = ({ projectsRef, creativeRef }: { projectsRef: React.RefObject<HTMLDivElement>, creativeRef: React.RefObject<HTMLDivElement> }) => {
+const Hero = () => {
   const lenis = useLenis(({ scroll }) => {
     // called every scroll
     console.log('scroll position:', scroll);
   });
-  const handleScrollToProjects = () => {
-    if (lenis && projectsRef.current) {
-      console.log('Scrolling to projects:', projectsRef.current);
-      lenis.scrollTo(projectsRef.current);
-    } else {
-      console.log('Lenis or projectsRef not available');
-    }
-  };
-  const handleScrollToCreative = () => {
-    if (lenis && creativeRef.current) {
-      console.log('Scrolling to creative:', creativeRef.current);
-      lenis.scrollTo(creativeRef.current);
-    } else {
-      console.log('Lenis or creativeRef not available');
-    }
-  };
+
     return (
-      <ReactLenis root>
         <div className="pt-12">
         
       {/* Radial gradient for the container to give a faded look */}
@@ -99,7 +83,6 @@ const Hero = ({ projectsRef, creativeRef }: { projectsRef: React.RefObject<HTMLD
           </div>
             </div>
         </div>
-        </ReactLenis>
         );
     }
     

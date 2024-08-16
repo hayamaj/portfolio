@@ -8,10 +8,10 @@ import { PinContainer } from "./ui/Pin";
 import { forwardRef } from 'react';
 import Link from 'next/link';
 
-const Projects = forwardRef<HTMLDivElement>((props, ref) => {
+const AllProjects = () => {
   return (
     <div className="flex items-center justify-center my-16 bg-[#FBF6F4]">
-        <div ref={ref} className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="projects">
+        <div className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="projects">
             <div className="flex justify-between items-center">
                 <h1 className="font-semibold text-xl">Projects</h1>
                 
@@ -137,9 +137,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
     </div>
 
      );
-    });
+    };
     
-    // Adding the display name
-    Projects.displayName = 'WorkRef';
     
-    export default Projects;
+    export default AllProjects;

@@ -13,7 +13,7 @@ import { AiFillWarning } from 'react-icons/ai';
 import AllProjects from '@/components/AllProjects';
 
 
-const Projects = () => {
+const ProjectsPage = () => {
 
     return (
         <main className={`bg-[#FBF6F4] min-h-screen`}>
@@ -24,5 +24,4 @@ const Projects = () => {
         </main>
     );
 };
-
-export default Projects;
+export default ProjectsPage;

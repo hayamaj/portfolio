@@ -46,7 +46,5 @@ const Art = () => {
 };
 
 
-// Adding the display name
-Art.displayName = 'Creative';
 
 export default Art;

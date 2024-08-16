@@ -14,12 +14,21 @@ const Navbar = () => {
   <div className="flex flex-row justify-between items-center max-w-2xl mx-auto px-4">
     <div className="flex justify-start">
       <a href="/" className="h-24 w-24">
+      <video
+              src="/anim.mov"
+              autoPlay
+              loop
+              muted
+              className="h-full w-full"
+            />
+        {/*
         <DotLottieReact
           src="/animation.json"
           loop
           autoplay
           autoResizeCanvas
         />
+        */}
       </a>
     </div>
     <div className="flex flex-row justify-end items-center py-4">

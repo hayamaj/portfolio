@@ -13,15 +13,15 @@ import ImageGrid from '@/components/ui/ImageGrid';
 import Navbar from '@/components/ui/Navbar';
 
 
-const Creative = () => {
+const CreativePage = () => {
 
     return (
         <main className={`bg-[#FBF6F4] flex min-h-screen flex-col items-center justify-between`}>
             <Navbar/>
             <FloatingNav navItems={navItems2} />
             <ImageGrid />
+            <Footer/>
         </main>
     );
 };
-
-export default Creative;
+export default CreativePage;

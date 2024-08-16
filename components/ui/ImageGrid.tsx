@@ -20,7 +20,7 @@ const ImageGrid = () => {
     
     <section id="s-work" className="bg-[#FBF6F4] container">
       
-    <div className="flex w-screen max-w-2xl -my-24">
+    <div className="flex w-screen max-w-2xl">
           <h1 className="font-semibold text-xl mx-auto top-0">Art</h1>
       </div>
       <div className="projects mt-4">

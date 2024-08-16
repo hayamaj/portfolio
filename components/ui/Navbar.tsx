@@ -13,10 +13,10 @@ const Navbar = () => {
     <div className="sticky top-5 z-50 w-full">
   <div className="flex flex-row justify-between items-center max-w-2xl mx-auto px-4">
     <div className="flex justify-start">
-      <a href="/" className="h-24 w-24 ml-2">
-      <div className="ml-4 md:ml-0 z-20 relative w-20 h-20 py-8 mt-4 rounded-full overflow-hidden">
+      <a href="/" className="h-24 w-24">
+      <div className="z-40 relative w-40 h-40 -top-5 -ml-6 md:-ml-16">
       <Image
-        src="/profile.JPG" // Replace with your profile picture path
+        src="/arr.svg" // Replace with your profile picture path
         alt="Profile Picture"
         layout="fill"
         objectFit="cover"

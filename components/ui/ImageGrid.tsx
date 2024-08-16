@@ -17,8 +17,12 @@ const ImageGrid = () => {
   };
 
   return (
-    <section id="s-work" className="container mx-auto py-12">
-      <div className="projects">
+    
+    <section id="s-work" className="bg-[#FBF6F4] container mx-auto ">
+    <div className="flex justify-between items-center">
+          <h1 className="font-semibold text-xl">Art</h1>
+      </div>
+      <div className="projects mt-4">
         {images.map((image, index) => {
           let rowClass = '';
           switch(index % 5) {
@@ -44,7 +48,7 @@ const ImageGrid = () => {
             <div key={image.id} id={`work-${image.id}`} className={`row ${rowClass}`}>
               <div className="block cursor-pointer" onClick={() => handleClick(image.id)}>
                 <div className="title mb-4">
-                  <h3 className="text-xs font-light">
+                  <h3 className="text-md font-light bg-[#FBF6F4]">
                     <span>{image.title}</span>
                   </h3>
                 </div>

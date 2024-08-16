@@ -1,79 +1,49 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+import React from 'react';
+import { images } from "@/data";
+import { useLenis } from '@/libs/lenis';
 
-import { projectz } from "@/data";
-import { PinContainer } from "./ui/Pin";
-import React, { forwardRef } from 'react';
 
-const Art = forwardRef<HTMLDivElement>((props, ref) => {
+const Art = () => {
+  function handleClick(id: number): void {
+    throw new Error('Function not implemented.');
+  }
+
   return (
-    <div ref={ref} className="pb-8 mt-48" id="/creative">
-    <div className="flex px-2 flex-col sm:flex-row justify-center items-center">
-    <h1 className="flex-1 flex text-black text-xl font-medium uppercase justify-center text-center">
-        creative
-      </h1>
-      <div className="flex-1 flex flex-wrap items-center justify-center p-4 gap-8 mt-10">
-        {projectz.map((projectz) => (
-          <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={projectz.id}
-          >
-            <a href={projectz.link}>
-            <PinContainer
-              title={projectz.title}
-              href={projectz.link}
-            >
-              <div className="relative shadow-md flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-none"
-                  
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
-                <img
-                  src={projectz.img}
-                  alt="cover"
-                  className="z-10 absolute object-cover w-full h-full"
-                />
-              </div>
 
-
-              <p
-                className="lg:text-sm lg:font-light font-light text-sm line-clamp-2"
-                style={{
-                  color: "#FFFFFF",
-                  margin: "1vh 0",
-                }}
-              >
-                {projectz.des}
-              </p>
-
-              <div className="flex mt-4 mb-3">
-                <div className="flex items-right">
-                  {projectz.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-6 h-6 flex justify-right items-right"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
-              </div>
-            </PinContainer>
-            </a>
-          </div>
-        ))}
+    <div className="flex items-center justify-center">
+    <div className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="work">
+    <div className="flex justify-between items-center">
+          <h1 className="font-semibold text-xl">Art</h1>
+          <a href="/creative" className="font-medium cursor-pointer ml-auto">See all artwork</a>
+        </div>
+          <div className="my-4 pb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  {images.slice(0,3).map((image) => (
+    <div key={image.id} id={`work-${image.id}`} className="cursor-pointer">
+      <div className="relative" onClick={() => handleClick(image.id)}>
+        <div className="thumbnail relative">
+          <img
+            src={image.src}
+            alt={image.title}
+            className="object-cover w-full h-auto"
+          />
+        </div>
+        <div className="title mb-4">
+          <h3 className="m-2 opacity-70 italic text-xs whitespace-nowrap overflow-hidden font-light bg-[#FBF6F4]">
+            <span>{image.title}</span>
+          </h3>
+        </div>
       </div>
+    </div>
+  ))}
+  </div>
+        </div>
       </div>
     </div>
   );
-});
+};
 
 
 // Adding the display name

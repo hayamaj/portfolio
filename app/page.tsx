@@ -12,10 +12,13 @@ import VantaBackground from "@/components/VantaBackground";
 import { ReactLenis, useLenis } from '@/libs/lenis';
 import { useRef } from 'react';
 import Creative from "./creative/page";
+import Work from "@/components/Work";
+import Navbar from "@/components/ui/Navbar";
 
 const Home = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const creativeRef = useRef<HTMLDivElement>(null);
+  const WorkRef = useRef<HTMLDivElement>(null);
 
   const lenis = useLenis(({ scroll }) => {
     // called every scroll
@@ -27,11 +30,12 @@ const Home = () => {
       <div className="background-noise"></div>
         <main className="z-2 relative bg-[#FBF6F4] flex justify-center items-center flex-col overflow-hidden mx-auto min-h-screen w-full">
           <div className="w-full">
+            <Navbar/>
             <FloatingNav navItems={navItems} />
             <Hero projectsRef={projectsRef} creativeRef={creativeRef} />
-            <About />
+            <Work ref={WorkRef} />
             <RecentProjects ref={projectsRef} />
-            <Art ref={creativeRef} />
+            <Art />
             <Footer />
           </div>
         </main>

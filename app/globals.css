@@ -297,7 +297,7 @@ html.lenis, html.lenis body {
 .block .title span {
   display: block;
   font-weight: 300;
-  font-size: 0.7vw;
+  font-size: 2vw;
   line-height: 2.083vw;
   letter-spacing: -0.02em;
 }

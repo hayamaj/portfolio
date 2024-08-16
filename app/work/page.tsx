@@ -8,20 +8,20 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems2 } from "@/data";
 
 import Footer from '@/components/Footer';
-import Art from '@/components/Art';
-import ImageGrid from '@/components/ui/ImageGrid';
 import Navbar from '@/components/ui/Navbar';
+import { AiFillWarning } from 'react-icons/ai';
+import AllWork from '@/components/AllWork';
 
 
-const Creative = () => {
+const Work = () => {
 
     return (
-        <main className={`bg-[#FBF6F4] flex min-h-screen flex-col items-center justify-between`}>
+        <main className={`bg-[#FBF6F4] min-h-screen`}>
             <Navbar/>
             <FloatingNav navItems={navItems2} />
-            <ImageGrid />
+            <AllWork/>
         </main>
     );
 };
 
-export default Creative;
+export default Work;

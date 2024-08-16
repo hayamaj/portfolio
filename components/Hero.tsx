@@ -31,16 +31,25 @@ const Hero = ({ projectsRef, creativeRef }: { projectsRef: React.RefObject<HTMLD
   };
     return (
       <ReactLenis root>
-        <div className="pb-20 pt-24">
+        <div className="pt-12">
         
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center
          " />
          
-        <div className="flex justify-center relative my-20 z-10">
-            <div className="max-w-[100vw] md:max-w-4xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                <h1 className="text-center text-4xl md:text-6xl lg:text-7xl my-4 uppercase" >Haya AlMajali</h1>
-                <h2 className="tracking-widest text-sm text-center font-normal max-w-80 font-mono my-4">( hey-ya, like <Link href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM" className="underline text-neutral-400 hover:text-neutral-200">the song.</Link> )</h2>
+        <div className="flex justify-center relative my-4 z-10">
+            <div className="flex flex-col items-left justify-center w-screen max-w-2xl m-12">
+                <h1 className="text-left text-2xl md:text-2xl lg:text-2xl uppercase" >Haya AlMajali</h1>
+                <h2 className="text-xs text-left font-light font-mono italic max-w-80">(hey-ya, like <Link href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM" className="underline text-neutral-400 hover:text-neutral-200">the song.</Link>)</h2>
+
+              <div className="flex flex-col my-4 mb-8">
+              <p className="font-light italic my-2">I am a software developer, creative, AI enthusiast, serial networker, runner & professional café hopper.</p>
+              <p className="font-light">My unique <span className="italic font-semibold">strength</span> lies in bridging the gaps between people across different worlds. My ultimate <span className="italic font-semibold">passion</span> is to make people feel heard, loved, and connected to each other. </p>
+              </div>
+
+              
+
+{/*
 
                 <div className="flex flex-col my-4 mb-12">
                 <p 
@@ -66,23 +75,29 @@ const Hero = ({ projectsRef, creativeRef }: { projectsRef: React.RefObject<HTMLD
       
 
           </div>
+          */}
                 {/*
                 <p className="lowercase text-center font-medium tracking-widest md:tracking-wider mb-4 text-xs md:text-lg lg:text-xl text-white mt-4">Hi, I&apos;m Haya <span className="text-white font-light">(hey-ya)</span>, a full-stack creative product developer based in <span className="text-white font-medium">New York</span>.</p>
                 {/*<a href="#about"><MagicButton title="about" icon={<FaLocationArrow />} position= "right" />
                 </a>*/}
-                <div className="flex items-center justify-center mt-7 mb-3 space-x-4">
+                <div className="flex flex-row">
+                <div className="ml-2 -mt-2 flex items-left justify-left mb-3 space-x-4">
             <Link href="mailto:hayamaj@bu.edu" className="text-black">
-              <FaEnvelope size={24} />
+              <FaEnvelope size={18} />
             </Link>
             <Link href="https://www.linkedin.com/in/hayamaj" className="text-black">
-              <FaLinkedin size={24} />
+              <FaLinkedin size={18} />
             </Link>
             <Link href="https://github.com/hayamaj" className="text-black">
-              <FaGithub size={24} />
+              <FaGithub size={18} />
             </Link>
           </div>
+          <div className="-mt-[10px] mx-4">
+              <MagicButton title="resume" icon={<FaLocationArrow />} position="right" />
             </div>
-        </div>
+            </div>
+          </div>
+            </div>
         </div>
         </ReactLenis>
         );

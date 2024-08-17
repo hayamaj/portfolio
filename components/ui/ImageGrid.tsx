@@ -19,7 +19,7 @@ const ImageGrid = () => {
   return (
     
     <section id="s-work" className="bg-[#FBF6F4] container">
-    <div className="flex md:justify-center items-center md:-my-36 md:ml-24 max-w-2xl w-screen">
+    <div className="flex md:justify-center items-center md:-my-36 md:ml-18 max-w-2xl w-screen">
           <h1 className="font-semibold text-xl justify-center">Art</h1>
       </div>
       <div className="projects md:mt-36 mt-8">

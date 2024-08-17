@@ -13,7 +13,7 @@ import AllWork from '@/components/AllWork';
 const WorkPage = () => {
 
     return (
-        <main className={`bg-[#FBF6F4] min-h-screen`}>
+        <main className={`bg-[#FBF6F4] relative overflow-hidden min-h-screen`}>
             <div className="background-noise"></div>
             <Navbar/>
             <FloatingNav navItems={navItems2} />

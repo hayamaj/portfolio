@@ -16,7 +16,7 @@ import AllProjects from '@/components/AllProjects';
 const ProjectsPage = () => {
 
     return (
-        <main className={`bg-[#FBF6F4] min-h-screen`}>
+        <main className={`bg-[#FBF6F4] relative min-h-screen overflow-hidden`}>
             <div className="background-noise"></div>
             <Navbar/>
             <FloatingNav navItems={navItems2} />

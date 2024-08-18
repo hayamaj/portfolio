@@ -6,7 +6,7 @@ const Work = () => {
   <div className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="work">
   <div className="flex justify-between items-center">
           <h1 className="font-semibold text-xl">Work</h1>
-          <a href="/work" className="font-medium cursor-pointer ml-auto">See all work</a>
+          <a href="/work" className="font-medium cursor-pointer ml-auto hover:text-gray-700">See all work</a>
         </div>
         <div className="my-4">
         <h1 className="font-semibold">Yuva AI</h1>

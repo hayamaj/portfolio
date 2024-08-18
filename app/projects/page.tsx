@@ -5,7 +5,7 @@ import React, { forwardRef, useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { navItems2 } from "@/data";
+import { navItems } from "@/data";
 
 import Footer from '@/components/Footer';
 import Navbar from '@/components/ui/Navbar';
@@ -19,7 +19,7 @@ const ProjectsPage = () => {
         <main className={`bg-[#FBF6F4] relative min-h-screen overflow-hidden`}>
             <div className="background-noise"></div>
             <Navbar/>
-            <FloatingNav navItems={navItems2} />
+            <FloatingNav navItems={navItems} />
             <AllProjects/>
             <Footer/>
         </main>

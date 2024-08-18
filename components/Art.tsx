@@ -16,7 +16,7 @@ const Art = () => {
     <div className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="work">
     <div className="flex justify-between items-center">
           <h1 className="font-semibold text-xl">Art</h1>
-          <a href="/creative" className="font-medium cursor-pointer ml-auto">See all artwork</a>
+          <a href="/creative" className="font-medium cursor-pointer hover:text-gray-700 ml-auto">See all artwork</a>
         </div>
           <div className="my-4 pb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

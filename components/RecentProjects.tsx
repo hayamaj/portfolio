@@ -12,7 +12,7 @@ const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
     <div ref={ref} className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="projects">
     <div className="flex justify-between items-center">
           <h1 className="font-semibold text-xl">Projects</h1>
-          <a href="/projects" className="font-medium cursor-pointer ml-auto">See all projects</a>
+          <a href="/projects" className="font-medium cursor-pointer ml-auto hover:text-gray-700">See all projects</a>
         </div>
       <div className="my-4">
       <h1 className="font-semibold">Dibs!</h1>

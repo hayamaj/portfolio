@@ -14,6 +14,12 @@ const Work = () => {
         <h1 className="font-light opacity-50">May 2024-August 2024</h1>
         </div>
 
+        <div className="my-4">
+                <h1 className="font-semibold">Dakota Systems</h1>
+                <h1 className="font-light opacity-50">AI Integration and Solutions Engineer</h1>
+                <h1 className="font-light opacity-50">May 2023-Nov 2023</h1>
+            </div>
+
 
         </div>
 

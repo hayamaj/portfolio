@@ -16,14 +16,21 @@ const ImageGrid = () => {
     }
   };
 
+  // Move the video (id: 3) to the third position in the array
+  const modifiedImages = [...images];
+  const videoIndex = modifiedImages.findIndex(image => image.id === 3);
+  if (videoIndex !== -1) {
+    const [video] = modifiedImages.splice(videoIndex, 1);
+    modifiedImages.splice(2, 0, video); // Insert the video at the third position (index 2)
+  }
+
   return (
-    
     <section id="s-work" className="bg-[#FBF6F4] container">
-    <div className="flex md:justify-center md:pl-40 items-center md:-my-36 md:ml-18 max-w-2xl w-screen">
-          <h1 className="font-semibold text-xl justify-center">Art</h1>
+      <div className="flex md:justify-center md:pl-40 items-center md:-my-36 md:ml-18 max-w-2xl w-screen">
+        <h1 className="font-semibold text-xl justify-center">Art</h1>
       </div>
       <div className="projects md:mt-36 mt-8">
-        {images.map((image, index) => {
+        {modifiedImages.map((image, index) => {
           let rowClass = '';
           switch(index % 5) {
             case 0:
@@ -53,18 +60,25 @@ const ImageGrid = () => {
                   </h3>
                 </div>
                 <div className="thumbnail relative">
-                  <img
-                    src={image.src}
-                    alt={image.title}
-                    className="object-cover w-auto h-full"
-                  />
+                  {image.type === 'video' ? (
+                    <video
+                      src={image.src}
+                      className="w-full h-full object-cover"
+                      controls
+                    />
+                  ) : (
+                    <img
+                      src={image.src}
+                      alt={image.title}
+                      className={`w-auto h-full object-cover`}
+                    />
+                  )}
                 </div>
               </div>
             </div>
           );
         })}
       </div>
-      
     </section>
   );
 };

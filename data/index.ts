@@ -54,7 +54,7 @@ export const images = [
     alt: "Image 1",
   },
   {
-    id: 4,
+    id: 11,
     title: "Detail, 2023 (Oil on Canvas)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP002.jpg",
     alt: "Image 1",
@@ -66,7 +66,7 @@ export const images = [
     alt: "Image 1",
   },
   {
-    id: 3,
+    id: 4,
     title: "Commissioned Portrait II (Oil on Canvas)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP004.jpg",
     alt: "Image 1",
@@ -107,6 +107,13 @@ export const images = [
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1722103822/image-gallery/kktn6wuyva7pt6iah4x1.png",
     alt: "Image 1",
   },
+  {
+    id: 3,
+    title: "Geurnica Brought to Life",
+    src: "https://res.cloudinary.com/dqqim3gc1/video/upload/v1707341834/image-gallery/MG001.mp4",
+    type: "video",
+    alt: "video"
+  }
 ];
 
 

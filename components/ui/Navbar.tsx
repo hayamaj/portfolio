@@ -36,7 +36,7 @@ const Navbar = () => {
       <nav className="flex space-x-8">
         <a href="/work" className="text-lg font-medium hover:text-gray-700">work</a>
         <a href="/projects" className="text-lg font-medium hover:text-gray-700">projects</a>
-        <a href="/creative" className="text-lg font-medium hover:text-gray-700">art</a>
+        {/*<a href="/creative" className="text-lg font-medium hover:text-gray-700">art</a>*/}
       </nav>
     </div>
   </div>

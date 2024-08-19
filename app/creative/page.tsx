@@ -9,7 +9,7 @@ import { navItems } from "@/data";
 
 import Footer from '@/components/Footer';
 import Art from '@/components/Art';
-import ImageGrid from '@/components/ui/ImageGrid';
+import ImageGridNew from '@/components/ui/ImageGridNew';
 import Navbar from '@/components/ui/Navbar';
 
 
@@ -20,7 +20,6 @@ const CreativePage = () => {
               <div className="background-noise"></div>
             <Navbar/>
             <FloatingNav navItems={navItems} />
-            <ImageGrid />
             <Footer/>
         </main>
     );

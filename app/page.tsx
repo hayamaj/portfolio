@@ -30,7 +30,6 @@ const Home = () => {
             <Hero />
             <Work />
             <RecentProjects />
-            <Art />
             <Footer />
           </div>
         </main>

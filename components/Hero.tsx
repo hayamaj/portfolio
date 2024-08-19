@@ -80,9 +80,6 @@ const Hero = () => {
             <Link href="https://open.spotify.com/user/31544kpezgqth4zrr45pj3rzociq?si=6a1dba29a02a48cb" className="text-black">
             <FaSpotify size={18} />
             </Link>
-            <Link href="https://www.strava.com/athletes/85821606?utm_source=ios_share&utm_medium=social&share_sig=1111AEF21721848091&_branch_match_id=1346193845168973856&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy4pSixL1EssKNDLyczL1s82j%2FQzsTQ2LvVJAgDcA63FIwAAAA%3D%3D" className="text-black">
-            <MdDirectionsRun size={20} />
-            </Link>
 
           </div>
           <div className="-mt-[10px] mx-4">

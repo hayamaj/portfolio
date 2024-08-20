@@ -46,8 +46,8 @@ const AllProjects = () => {
                 </div>
                 </div>
                 <div className="pt-8">
-                        <h2 className="font-normal text-left">A quick look</h2>
-                        <div className="mt-4">
+                        <h2 className="font-medium text-left">A quick look</h2>
+                        <div className="mt-0">
                             <Image
                                 src="/dibs2.png"
                                 width={1000}
@@ -55,19 +55,19 @@ const AllProjects = () => {
                                 alt="Dibs Version 2"
                             />
                         </div>
-                        <p className="mt-4 text-left text-xs sm:text-sm lowercase">
+                        <p className="mt-4 text-left text-xs sm:text-sm">
                             My Role: <strong className="">Product Lead/Manager</strong>
                         </p>
-                        <p className="mt-0 text-left lowercase text-xs sm:text-sm">
+                        <p className="mt-0 text-left text-xs sm:text-sm">
                             Tech Stack: <strong className="">React Native, Expo, TypeScript, Firebase & Google Auth</strong>
                         </p>
-                        <p className="mt-4 text-left max-w-5xl lowercase text-xs sm:text-sm mt-12">
+                        <p className="mt-4 text-left max-w-5xl text-xs sm:text-sm mt-12">
                         Click here to watch a <Link href="/product/dibs/demo" className="text-xs sm:text-sm underline decoration-1 underline-offset-2 opacity-30 hover:opacity-100 font-bold">demo</Link> of the app.
                     </p>
                     </div>
 
-                    <div className="pt-12">
-                    <h2 className="font-normal text-left">My role</h2>
+                    <div className="pt-12 my-16">
+                    <h2 className="font-medium text-left">My role</h2>
                     <p className="text-left text-justify pt-4 font-light">
                         I guided the project from its conceptualization to launch, orchestrating cross-functional teams through <strong className="font-bold">15+</strong> product cycles. This journey encompassed conducting user research, crafting user stories, designing wireframes on Figma, overseeing development, conducting usability testing, and managing cross-functional teams using tools like Trello.
                     </p>
@@ -75,8 +75,8 @@ const AllProjects = () => {
 
                 
 
-                <div className="pt-8">
-                <h2 className="font-normal text-left">Product Evolution</h2>
+                <div className="pt-8 my-16">
+                <h2 className="font-medium text-left">Product Evolution</h2>
                     <h2 className="mt-4 text-sm font-normal text-left lowercase">V1 &#8212;  (MVP)</h2>
                     <div className="">
                         <Image
@@ -95,7 +95,7 @@ const AllProjects = () => {
 
                 </div>
 
-                <div className="pt-8">
+                <div className="">
                 <h2 className="mt-4 text-sm font-normal text-left lowercase">V2 &#8212; </h2>
                         <div className="">
                             <Image
@@ -114,12 +114,12 @@ const AllProjects = () => {
                         
 
                     <div className="mt-12 text-left items-justify">
-                    <h2 className="my-2 font-light">We:</h2>
+                    <h2 className="my-2 font-medium">I:</h2>
                         <ul className="ml-4 list-none space-y-1">
-                            <li className="list-disc font-light"><strong className="font-medium">Expanded</strong> dev team.</li>
+                            <li className="list-disc font-light"><strong className="font-medium">Expanded</strong> the dev team.</li>
                             <li className="list-disc font-light"><strong className="font-medium">Migrated</strong> from web to mobile.</li>
                             <li className="list-disc font-light"><strong className="font-medium">Performed</strong> an overhaul of app&apos;s UI/UX.</li>
-                            <li className="list-disc font-light"><strong className="font-medium">Explored</strong> more efficient solutions.</li>
+                            <li className="list-disc font-light"><strong className="font-medium">Explored</strong> more efficient solutions based on user feedback.</li>
                         </ul>
                     </div>
 

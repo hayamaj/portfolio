@@ -10,22 +10,26 @@ import Link from 'next/link';
 
 const AllProjects = () => {
   return (
-    <div className="flex items-center justify-center my-16 bg-[#FBF6F4]">
-        <div className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="projects">
-            <div className="flex justify-between items-center">
-                <h1 className="font-semibold text-xl">Projects</h1>
-                
-            </div>
+    <div className="flex items-center justify-center my-16">
+        <div className="my-16 flex flex-col items-left font-light justify-center w-screen max-w-2xl mx-12" id="projects">
+
             {/*job 1*/}
-            <div className="my-4">
+            <div className="my-4 ">
                 <div className="flex flex-row">
                     
                 <h1 className="font-semibold">Dibs!</h1>
                     </div>
                 <h1 className="font-light opacity-50">React Native, Typescript, Expo</h1>
                 <p>A digital thrift store solution to campus waste management.</p>
+                <div>
+                <div className="justify-between max-w-2xl my-6 text-black list-disc opacity-70">
+                <li className="font-light"><span className="font-medium">288 hours</span> on development.</li>
+                <li className="font-light"><span className="font-medium">127 interviews</span> conducted.</li>
+                <li className="font-light"><span className="font-medium">13 &nbsp; beta users</span> tested.</li>
+                </div>
+                </div>
 
-                <div className="flex flex-row space-x-6 my-4">
+
                 {/*
                 <div className="z-50 relative bg-black w-40 h-40 rounded-full overflow-visible">
                     <Image
@@ -37,14 +41,8 @@ const AllProjects = () => {
                     />
                     </div>
 */}
-                <div>
-                <ul className="justify-between max-w-2xl m-6">
-                <li className="font-light mt-6 text-justify"><span className="font-semibold text-xl">288 hours</span> on development.</li>
-                <li className="font-light text-justify"><span className="font-semibold text-xl">127 interviews</span> conducted.</li>
-                <li className="font-light text-justify"><span className="font-semibold text-xl">13 &nbsp; beta users</span> tested.</li>
-                </ul>
-                </div>
-                </div>
+               
+
                 <div className="pt-8">
                         <h2 className="font-medium text-left">A quick look</h2>
                         <div className="mt-0">
@@ -66,16 +64,21 @@ const AllProjects = () => {
                     </p>
                     </div>
 
-                    <div className="pt-12 my-16">
+                    <div className="my-16">
                     <h2 className="font-medium text-left">My role</h2>
                     <p className="text-left text-justify pt-4 font-light">
-                        I guided the project from its conceptualization to launch, orchestrating cross-functional teams through <strong className="font-bold">15+</strong> product cycles. This journey encompassed conducting user research, crafting user stories, designing wireframes on Figma, overseeing development, conducting usability testing, and managing cross-functional teams using tools like Trello.
+                    I worked on dibs from 2022 - 2024, leading the project from inception to a successful launch over the course of those two years. 
+                    I built the team from scratch and balanced multiple roles throughout the project, including Lead Developer, Product Manager, & Operator. 
+                    Overall, I led the team through <strong className="font-bold">15+</strong> product cycles. 
+                    This journey encompassed conducting user research, crafting user stories, designing wireframes on Figma, 
+                    overseeing development, conducting usability testing, and managing cross-functional teams using tools like Trello. I ensured the product vision remained intact throughout the whole process.
                     </p>
+
                 </div>
 
                 
 
-                <div className="pt-8 my-16">
+                <div className=" my-16">
                 <h2 className="font-medium text-left">Product Evolution</h2>
                     <h2 className="mt-4 text-sm font-normal text-left lowercase">V1 &#8212;  (MVP)</h2>
                     <div className="">

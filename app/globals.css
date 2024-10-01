@@ -4,7 +4,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('/fonts/MinionPro/MinionPro-Regular.woff2') format('woff2'),
+       url('/fonts/MinionPro/MinionPro-Regular.woff') format('woff'),
+       url('/fonts/MinionPro/MinionPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('/fonts/MinionPro/MinionPro-Bold.woff2') format('woff2'),
+       url('/fonts/MinionPro/MinionPro-Bold.woff') format('woff'),
+       url('/fonts/MinionPro/MinionPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 @keyframes noise {
   0% {
@@ -42,6 +58,18 @@
   }
 }
 
+.backg-im {
+  position: absolute;
+  pointer-events: none;
+  top: -10rem;
+  left: -10rem;
+  height: 100vh;
+  width: calc(100% + 20rem);
+  background-image: url('/bg.svg');
+  background-position: 50%;
+  z-index: 10;
+}
+
 .background-noise {
   position: absolute;
   pointer-events: none;
@@ -59,29 +87,31 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 0 0% 100%; /* Assuming the background is light */
+
+    /* Darker foreground for text to contrast with light background */
+    --foreground: 0 0% 20%; /* Dark gray instead of pure black */
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 0 0% 15%; /* Darker text on card elements */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 0 0% 15%; /* Dark gray for popovers */
 
     --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: 0 0% 15%; /* Softer black for primary text */
 
     --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary-foreground: 0 0% 30%; /* Medium gray for secondary text */
 
     --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted-foreground: 0 0% 40%; /* Lighter gray for muted text */
 
     --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent-foreground: 0 0% 20%; /* Slightly softer black for accent text */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 15%; /* Dark red for destructive actions */
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
@@ -89,6 +119,8 @@
 
     --radius: 0.5rem;
   }
+
+
 
   .dark {
     --background: 240 10% 3.9%;
@@ -126,7 +158,7 @@
     @apply border-border !scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
   }
   button {
     @apply active:outline-none;

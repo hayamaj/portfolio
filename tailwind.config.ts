@@ -26,6 +26,12 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'svg': "url('/noise.png')",
+      },
+      boxShadow: {
+        'white-glow': '0 0 10px 2px rgba(255, 255, 255, 0.8)',
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -144,6 +150,7 @@ const config = {
       },
       fontFamily: {
         ibmPlexMono: ['IBM Plex Mono', 'monospace'],
+        minion: ['Minion Pro', 'serif'],
       },
       lineHeight: {
         'custom': '1.5',

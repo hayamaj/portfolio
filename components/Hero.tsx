@@ -25,12 +25,13 @@ const Hero = () => {
          
         <div className="flex justify-center relative my-4 z-10">
             <div className="flex flex-col items-left justify-center w-screen max-w-2xl m-12">
+      
                 <h1 className="text-left text-2xl md:text-2xl lg:text-2xl uppercase" >Haya AlMajali</h1>
                 <h2 className="text-xs text-left font-light font-mono italic max-w-80">(hey-ya, like <Link href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM" className="underline text-neutral-400 hover:text-neutral-200">the song.</Link>)</h2>
 
               <div className="flex flex-col my-4 mb-8">
-              <p className="font-light italic my-2">I am a software developer, creative, AI enthusiast, serial networker, runner & professional café hopper.</p>
-              <p className="font-light">My unique <span className="italic font-semibold">strength</span> lies in bridging the gaps between people across different worlds. My ultimate <span className="italic font-semibold">passion</span> is to make people feel heard, loved, and connected to each other. </p>
+              <p className="font-light italic my-2 text-neutral-600">I am a software developer, creative, AI enthusiast, serial networker, runner & professional café hopper.</p>
+
               </div>
 
               

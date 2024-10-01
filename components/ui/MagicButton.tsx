@@ -6,7 +6,7 @@ const MagicButton = ({title, icon, position, handleClick, otherClasses}:{title:s
         // Button code
         <a
         href="/AlMajali-Resume.pdf"
-        download="AlMajali-Resume.pdf" className="p-[1.75px] px-2 lowercase text-xs rounded-sm bg-black font-normal text-white sm:text-sm font-mono hover:bg-neutral-300">
+        download="AlMajali-Resume.pdf" className="p-[1.75px] lowercase text-xs rounded-sm bg-transparent border-[0.5px] border-black font-light text-black sm:text-sm font-mono hover:bg-transparent">
   resume
 </a>
       

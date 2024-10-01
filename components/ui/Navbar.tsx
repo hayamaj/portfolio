@@ -10,11 +10,11 @@ const Navbar = () => {
   
   
   return (
-    <div className="sticky top-5 z-50 w-full">
-  <div className="flex flex-row justify-between items-center max-w-2xl mx-auto px-4">
-    <div className="flex justify-start">
-      <a href="/" className="h-24 w-24">
-      <div className="z-40 relative w-40 h-40 -top-5 -ml-6 md:-ml-16">
+    <div className="sticky z-50 w-full">
+  <div className="flex flex-row justify-between max-w-2xl lg:min-w-screen px-4">
+    <div className="relative lg:fixed flex flex-row justify-start items-center">
+      <a href="/" className="h-24 w-24 -top-72">
+      <div className="z-40 relative w-40 h-40 invisible md:visible">
       <Image
         src="/arr.svg" // Replace with your profile picture path
         alt="Profile Picture"
@@ -32,13 +32,15 @@ const Navbar = () => {
         */}
       </a>
     </div>
-    <div className="flex flex-row justify-end items-center py-4 mr-2">
-      <nav className="flex space-x-8">
-        <a href="/work" className="text-lg font-medium hover:text-gray-700">work</a>
-        <a href="/projects" className="text-lg font-medium hover:text-gray-700">projects</a>
-        {/*<a href="/creative" className="text-lg font-medium hover:text-gray-700">art</a>*/}
-      </nav>
-    </div>
+    <div className="relative lg:fixed right-8 lg:top-0 lg:right-4 lg:m-8 flex flex-row justify-end items-center">
+  <nav className="flex space-x-8 text-stone-900">
+    <a href="/about" className="text-md font-light hover:text-stone-300">ABOUT</a>
+    <a href="/projects" className="text-md font-light hover:text-stone-300">PROJECTS</a>
+    <a href="/blog" className="text-md font-light hover:text-stone-300">BLOG</a>
+    {/*<a href="/creative" className="text-lg font-medium hover:text-gray-700">art</a>*/}
+  </nav>
+</div>
+
   </div>
 </div>
 

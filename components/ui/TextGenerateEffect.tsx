@@ -37,10 +37,21 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              initial={{ opacity: 0, color: idx > 1 ? '#FBF6F4' : '#000000' }}
-              animate={{ opacity: 1, color: idx > 1 ? '#FBF6F4' : '#000000' }}
+              initial={{ opacity: 0, color: idx > 1 ? '#fda4af' : '#000000' }}
+              animate={{ opacity: 1, color: idx > 1 ? '#fda4af' : '#000000' }}
               transition={{ duration: 1, delay: idx * 0.2 }}
-              className={`dark:text-[#0D0628] uppercase ${idx > 1 ? 'text-[#FFFFFF] underline decoration-1 underline-offset-2' : 'text-[##FFFFFF]'} opacity-0`}
+              className={`dark:text-[#0D0628] uppercase ${
+                word.toLowerCase() === "the song"
+                  ? 'text-[#fda4af] underline decoration-1 underline-offset-2 cursor-pointer'
+                  : idx > 1
+                  ? 'text-[#FFFFFF] underline decoration-1 underline-offset-2 cursor-pointer'
+                  : 'text-[#FFFFFF]'
+              } opacity-0`}
+              onClick={() => {
+                if (idx > 1)
+                  window.open("https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM", "_blank");
+                
+              }}
             >
               {word}{" "}
             </motion.span>
@@ -49,6 +60,7 @@ export const TextGenerateEffect = ({
       </motion.div>
     );
   };
+  
 
 
   return (

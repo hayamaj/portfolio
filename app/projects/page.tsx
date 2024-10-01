@@ -11,16 +11,17 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/ui/Navbar';
 import { AiFillWarning } from 'react-icons/ai';
 import AllProjects from '@/components/AllProjects';
+import ProjectsList from '@/components/ProjectsList';
 
 
 const ProjectsPage = () => {
 
     return (
-        <main className={`bg-[#FBF6F4] relative min-h-screen overflow-hidden`}>
+        <main className={`bg-white relative min-h-screen overflow-hidden p-4`}>
             <div className="background-noise"></div>
             <Navbar/>
-            <FloatingNav navItems={navItems} />
-            <AllProjects/>
+            <ProjectsList/>
+            {/*<AllProjects/>*/}
             <Footer/>
         </main>
     );

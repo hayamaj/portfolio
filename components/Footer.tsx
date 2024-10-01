@@ -8,9 +8,9 @@ const Footer = () => {
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
       
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-sm ml-4 text-black text-xs md:font-light font-light">
-          copyright © 2024 haya almajali
+      <div className="flex justify-center items-center">
+        <p className="md:text-xs ml-4 text-stone-400 text-xs md:font-light font-light">
+          Haya AlMajali © 2024 
         </p>
       </div>
     </footer>

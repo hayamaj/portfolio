@@ -8,8 +8,9 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import { ReactLenis, useLenis } from '@/libs/lenis';
 import { useRef } from 'react';
-import Work from "@/components/Work";
 import Navbar from "@/components/ui/Navbar";
+import Heroteaser from "@/components/Heroteaser";
+
 
 const Home = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
@@ -23,15 +24,17 @@ const Home = () => {
   return (
       <div className="relative min-h-screen w-full overflow-hidden">
       <div className="background-noise"></div>
-        <main className="z-2 relative bg-[#FBF6F4] flex justify-center items-center flex-col overflow-hidden mx-auto min-h-screen w-full">
-          <div className="w-full">
-            <Navbar/>
-            <FloatingNav navItems={navItems} />
-            <Hero />
+        <main className="z-2 relative flex justify-center items-center flex-col overflow-hidden mx-auto min-h-screen w-full">
+
+           {/* <Navbar/> */}
+            <Heroteaser />
+            {/*<FloatingNav navItems={navItems} />*/}
+
+            {/*
             <Work />
             <RecentProjects />
+            */}
             <Footer />
-          </div>
         </main>
       </div>
   );

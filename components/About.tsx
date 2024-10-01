@@ -21,13 +21,13 @@ const About = () => {
     </div>
 
     <p className="lg:text-md lg:font-light font-light font-sans text-sm text-justify max-w-lg text-black opacity-70 pt-4">
-      I'm <span className="font-medium opacity-100 text-black">Haya AlMajali</span> &mdash; Aspiring Product Leader/Strategist, Engineer, AI Enthusiast, People Person, Creative. I recently graduated from Boston University with a BA in Computer Science.
+      I&apos;m <span className="font-medium opacity-100 text-black">Haya AlMajali</span> &mdash; Aspiring Product Leader/Strategist, Engineer, AI Enthusiast, People Person, Creative. I recently graduated from Boston University with a BA in Computer Science.
     </p>
     <p className="-mt-4 lg:text-md lg:font-light font-light font-sans text-sm text-justify max-w-lg text-black opacity-70">
     I always wondered how I could make an impact on the world, and I studied CS because I recognized technology as a powerful tool that could be used to solve complex problems across every industry. I feel the same way about AI, which is what drove my interest to explore that community and the innovative work happening in that space.
         </p>
         <p className="-mt-4 lg:text-md lg:font-light font-light font-sans text-sm text-justify max-w-lg text-black opacity-70">
-        Beyond the technical, I'm a people person! I love working with people, specifically in the context of digging into problems and communicating them cross-functionally. At BU, I had the unique opportunity to lead several teams in developing my own products. It was there that I realized my unique strength in bridging the gap between people from diverse backgrounds and ensuring that we all work towards a common goal.         </p>
+        Beyond the technical, I&apos;m a people person! I love working with people, specifically in the context of digging into problems and communicating them cross-functionally. At BU, I had the unique opportunity to lead several teams in developing my own products. It was there that I realized my unique strength in bridging the gap between people from diverse backgrounds and ensuring that we all work towards a common goal.         </p>
 
   </div>
   

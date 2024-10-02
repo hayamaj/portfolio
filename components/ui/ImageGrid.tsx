@@ -25,9 +25,9 @@ const ImageGrid = () => {
   }
 
   return (
-    <section id="s-work" className="bg-[#FBF6F4] container">
+    <section id="s-work" className=" container">
       <div className="flex md:justify-center md:pl-40 items-center md:-my-36 md:ml-18 max-w-2xl w-screen">
-        <h1 className="font-semibold text-xl justify-center">Art</h1>
+        <h1 className="font-semibold text-xl justify-center mt-16">My Artwork</h1>
       </div>
       <div className="projects md:mt-36 mt-8">
         {modifiedImages.map((image, index) => {
@@ -55,7 +55,7 @@ const ImageGrid = () => {
             <div key={image.id} id={`work-${image.id}`} className={`row ${rowClass}`}>
               <div className="block cursor-pointer" onClick={() => handleClick(image.id)}>
                 <div className="title mb-4">
-                  <h3 className="text-md font-light bg-[#FBF6F4]">
+                  <h3 className="text-md font-light">
                     <span>{image.title}</span>
                   </h3>
                 </div>

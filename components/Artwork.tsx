@@ -5,7 +5,7 @@ import { images } from "@/data";
 const Artwork = () => {
   return (
     <section id="artwork" className="flex flex-col gap-4">
-      <h2 className="text-base font-medium text-black">Artwork</h2>
+      <h2 className="text-base font-medium text-black">Creative</h2>
       <div className="flex gap-3 overflow-x-auto pb-2">
         {images.map((image) => (
           <div

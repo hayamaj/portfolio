@@ -1,8 +1,8 @@
 'use client';
 import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider";
-import { ReactLenis, useLenis } from '@/libs/lenis';
 
 {/*
 export const metadata: Metadata = {
@@ -16,19 +16,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-    console.log('scroll position:', scroll);
-  });
-
   return (
     <html lang="en">
-      <body className=''
- >
-            <ReactLenis root>
-            {children}
-            </ReactLenis>
-          </body>
+      <body className={GeistSans.className}>{children}</body>
     </html>
   );
 }

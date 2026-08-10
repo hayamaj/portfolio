@@ -1,42 +1,32 @@
 "use client";
 
-import Art from "@/components/Art";
+import About from "@/components/About";
+import Artwork from "@/components/Artwork";
 import Footer from "@/components/Footer";
+import FoodRecs from "@/components/FoodRecs";
 import Hero from "@/components/Hero";
-import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNav";
-import { navItems } from "@/data";
-import { ReactLenis, useLenis } from '@/libs/lenis';
-import { useRef } from 'react';
-import Navbar from "@/components/ui/Navbar";
-import Heroteaser from "@/components/Heroteaser";
-
+import { HoverSpotlightProvider, SpotlightOverlay } from "@/components/HoverSpotlight";
+import Languages from "@/components/Languages";
+import Resources from "@/components/Resources";
+import TechStack from "@/components/TechStack";
 
 const Home = () => {
-  const projectsRef = useRef<HTMLDivElement>(null);
-  const creativeRef = useRef<HTMLDivElement>(null);
-  const WorkRef = useRef<HTMLDivElement>(null);
-
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-    console.log('scroll position:', scroll);
-  });
   return (
-      <div className="relative min-h-screen w-full overflow-hidden">
-      <div className="background-noise"></div>
-        <main className="z-2 relative flex justify-center items-center flex-col overflow-hidden mx-auto min-h-screen w-full">
-
-           {/* <Navbar/> */}
-            <Heroteaser />
-            {/*<FloatingNav navItems={navItems} />*/}
-
-            {/*
-            <Work />
-            <RecentProjects />
-            */}
-            <Footer />
+    <div className="relative min-h-screen w-full overflow-x-hidden bg-white text-black">
+      <HoverSpotlightProvider>
+        <main className="relative z-[2] mx-auto flex w-full max-w-4xl flex-col gap-14 px-5 py-8 sm:px-8 md:px-10 md:py-16">
+          <Hero />
+          <About />
+          <TechStack />
+          <Languages />
+          <Resources />
+          <Artwork />
+          <FoodRecs />
+          <SpotlightOverlay />
         </main>
-      </div>
+      </HoverSpotlightProvider>
+      <Footer />
+    </div>
   );
 };
 

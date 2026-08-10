@@ -48,15 +48,16 @@ export const contentData = [
 
 export const images = [
   {
+    id: 3,
+    title: "Geurnica Brought to Life",
+    src: "https://res.cloudinary.com/dqqim3gc1/video/upload/v1707341834/image-gallery/MG001.mp4",
+    type: "video",
+    alt: "video"
+  },
+  {
     id: 1,
     title: "Sattam AlMajali, 2019 (Oil on Canvas).",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP001.jpg",
-    alt: "Image 1",
-  },
-  {
-    id: 11,
-    title: "Detail, 2023 (Oil on Canvas)",
-    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP002.jpg",
     alt: "Image 1",
   },
   {
@@ -69,6 +70,18 @@ export const images = [
     id: 4,
     title: "Commissioned Portrait II (Oil on Canvas)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP004.jpg",
+    alt: "Image 1",
+  },
+  {
+    id: 8,
+    title: "Jiddo (Digital Photo)",
+    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1718474889/image2_lleqfm.jpg",
+    alt: "Image 1",
+  },
+  {
+    id: 11,
+    title: "Detail, 2023 (Oil on Canvas)",
+    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP002.jpg",
     alt: "Image 1",
   },
   {
@@ -90,12 +103,6 @@ export const images = [
     alt: "Image 1",
   },
   {
-    id: 8,
-    title: "Jiddo (Digital Photo)",
-    src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1718474889/image2_lleqfm.jpg",
-    alt: "Image 1",
-  },
-  {
     id: 9,
     title: "Old Man's Hands (Pencil on Paper)",
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191748/image-gallery/PC002.jpg",
@@ -107,13 +114,6 @@ export const images = [
     src: "https://res.cloudinary.com/dqqim3gc1/image/upload/v1722103822/image-gallery/kktn6wuyva7pt6iah4x1.png",
     alt: "Image 1",
   },
-  {
-    id: 3,
-    title: "Geurnica Brought to Life",
-    src: "https://res.cloudinary.com/dqqim3gc1/video/upload/v1707341834/image-gallery/MG001.mp4",
-    type: "video",
-    alt: "video"
-  }
 ];
 
 

@@ -1,35 +1,31 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+import Link from "next/link";
+import { useSpotlightHover } from "./HoverSpotlight";
 
-import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
-import React, { forwardRef } from 'react';
+const Projects = () => {
+  const spotlight = useSpotlightHover();
 
-const RecentProjects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="flex items-center justify-center">
-    <div ref={ref} className="mb-16 flex flex-col items-left justify-center w-screen max-w-2xl mx-12" id="projects">
-    <div className="flex justify-between items-center">
-          <h1 className="font-semibold text-xl">Projects</h1>
-          <a href="/projects" className="font-medium cursor-pointer ml-auto hover:text-gray-700">See all projects</a>
-        </div>
-      <div className="my-4">
-      <h1 className="font-semibold">Dibs!</h1>
-      <h1 className="font-light">Campus Waste-Sustainability App</h1>
+    <section id="projects" className="flex flex-col gap-3">
+      <div className="flex items-baseline justify-between">
+        <h2 className="text-base font-medium text-black">Projects</h2>
+        <Link href="/projects" className="text-sm font-light text-neutral-400 hover:text-black">
+          see all &rarr;
+        </Link>
       </div>
-
-
-
-
-
-</div></div>
-
-
+      <Link
+        href="/projects/dibs"
+        className="spotlight-row group -mx-3 flex flex-col gap-1 rounded-md px-3 py-2 transition-colors hover:bg-white"
+        {...spotlight}
+      >
+        <span className="text-base font-medium text-black group-hover:underline">dibs!</span>
+        <span className="text-base font-light text-neutral-500">
+          A digital thrift store solution to campus waste management.
+        </span>
+      </Link>
+    </section>
   );
-});
+};
 
-// Adding the display name
-RecentProjects.displayName = 'RecentProjects';
-
-export default RecentProjects;
+export default Projects;

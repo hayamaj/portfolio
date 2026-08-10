@@ -34,7 +34,7 @@ const Navbar = () => {
     </div>
     <div className="relative lg:fixed right-8 lg:top-0 lg:right-4 lg:m-8 flex flex-row justify-end items-center">
   <nav className="flex space-x-8 text-stone-900">
-    <a href="/about" className="text-md font-light hover:text-stone-300">ABOUT</a>
+    <a href="/" className="text-md font-light hover:text-stone-300">HOME</a>
     <a href="/projects" className="text-md font-light hover:text-stone-300">PROJECTS</a>
     <a href="/blog" className="text-md font-light hover:text-stone-300">BLOG</a>
     {/*<a href="/creative" className="text-lg font-medium hover:text-gray-700">art</a>*/}

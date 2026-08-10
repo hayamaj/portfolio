@@ -5,7 +5,7 @@ import Image from "next/image";
 import { IoVolumeMediumOutline, IoVolumeMuteOutline } from "react-icons/io5";
 
 const Hero = () => {
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
 
   return (
     <header className="flex flex-col gap-5">

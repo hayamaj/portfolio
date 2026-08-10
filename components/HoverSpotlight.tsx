@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 const SpotlightContext = createContext<{
   active: boolean;
@@ -9,6 +9,16 @@ const SpotlightContext = createContext<{
 
 export const HoverSpotlightProvider = ({ children }: { children: ReactNode }) => {
   const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const reset = () => setActive(false);
+    window.addEventListener("pageshow", reset);
+    document.addEventListener("visibilitychange", reset);
+    return () => {
+      window.removeEventListener("pageshow", reset);
+      document.removeEventListener("visibilitychange", reset);
+    };
+  }, []);
 
   return (
     <SpotlightContext.Provider value={{ active, setActive }}>{children}</SpotlightContext.Provider>
@@ -19,9 +29,13 @@ export const useSpotlightHover = () => {
   const ctx = useContext(SpotlightContext);
   if (!ctx) throw new Error("useSpotlightHover must be used within HoverSpotlightProvider");
   const { setActive } = ctx;
+
+  const canHover = () =>
+    typeof window !== "undefined" && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
   return {
-    onMouseEnter: () => setActive(true),
-    onMouseLeave: () => setActive(false),
+    onMouseEnter: () => canHover() && setActive(true),
+    onMouseLeave: () => canHover() && setActive(false),
   };
 };
 

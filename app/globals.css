@@ -402,10 +402,4 @@ html.lenis, html.lenis body {
 
 .spotlight-row {
   position: relative;
-  z-index: 10;
-  transition: background-color 200ms ease;
-}
-
-.spotlight-row:hover {
-  z-index: 30;
 }

@@ -89,10 +89,10 @@ const About = () => {
                   )}
                   <span>{e.company}</span>
                 </span>
+                <p className="mt-0.5 text-sm text-neutral-400">
+                  {e.type} | {e.range} | {e.duration}
+                </p>
               </HoverPreview>
-              <p className="mt-0.5 text-sm text-neutral-400">
-                {e.type} | {e.range} | {e.duration}
-              </p>
             </li>
           ))}
         </ul>

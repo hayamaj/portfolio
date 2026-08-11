@@ -35,8 +35,8 @@ const FoodRecs = () => {
                 <span className="text-neutral-300">&middot;</span>
                 <span>{r.rating}</span>
               </span>
+              <p className="mt-0.5 text-sm text-neutral-400">{r.area}</p>
             </HoverPreview>
-            <p className="mt-0.5 text-sm text-neutral-400">{r.area}</p>
           </li>
         ))}
       </ul>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useSpotlightHover } from "./HoverSpotlight";
+import { useSpotlight } from "./HoverSpotlight";
 
 const resources = [
   {
@@ -31,26 +31,38 @@ const resources = [
   },
 ];
 
-const Resources = () => {
-  const spotlight = useSpotlightHover();
+const ResourceRow = ({ title, domain, url }: { title: string; domain: string; url: string }) => {
+  const { isActive, onMouseEnter, onMouseLeave, onClick } = useSpotlight(url);
 
+  return (
+    <li>
+      <Link
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        onClick={onClick}
+        className={`spotlight-row group -mx-3 flex flex-col gap-0.5 rounded-md px-3 py-2 transition-colors ${
+          isActive ? "z-30 bg-white shadow-md" : "z-10 hover:bg-white"
+        }`}
+      >
+        <span className={`text-base font-normal text-black ${isActive ? "underline" : "group-hover:underline"}`}>
+          {title}
+        </span>
+        <span className="text-sm font-light text-neutral-400">{domain}</span>
+      </Link>
+    </li>
+  );
+};
+
+const Resources = () => {
   return (
     <section id="resources" className="flex flex-col gap-3">
       <h2 className="text-base font-medium text-black">Resources that shaped how I think</h2>
       <ul className="flex flex-col gap-1">
         {resources.map((r) => (
-          <li key={r.url}>
-            <Link
-              href={r.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="spotlight-row group -mx-3 flex flex-col gap-0.5 rounded-md px-3 py-2 transition-colors hover:bg-white"
-              {...spotlight}
-            >
-              <span className="text-base font-normal text-black group-hover:underline">{r.title}</span>
-              <span className="text-sm font-light text-neutral-400">{r.domain}</span>
-            </Link>
-          </li>
+          <ResourceRow key={r.url} title={r.title} domain={r.domain} url={r.url} />
         ))}
       </ul>
     </section>

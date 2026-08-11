@@ -15,6 +15,11 @@ const resources = [
     url: "https://open.spotify.com/show/7gKwwMLFLc6RmjmRpbMtEO",
   },
   {
+    title: "Generative Agents: Interactive Simulacra of Human Behavior",
+    domain: "arxiv.org",
+    url: "https://arxiv.org/abs/2304.03442",
+  },
+  {
     title: "The Design of Everyday Things",
     domain: "mitpress.mit.edu",
     url: "https://mitpress.mit.edu/9780262640374/the-design-of-everyday-things/",

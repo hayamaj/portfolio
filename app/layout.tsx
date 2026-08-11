@@ -1,15 +1,25 @@
-'use client';
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-import { ThemeProvider } from "@/components/provider";
 
-{/*
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hayamaj.com"),
   title: "Haya AlMajali",
-  description: "my portfolio website",
+  description: "Product, AI, and design — portfolio of Haya AlMajali.",
+  openGraph: {
+    title: "Haya AlMajali",
+    description: "Product, AI, and design — portfolio of Haya AlMajali.",
+    url: "https://hayamaj.com",
+    siteName: "Haya AlMajali",
+    images: ["/profile.JPG"],
+  },
+  twitter: {
+    card: "summary",
+    title: "Haya AlMajali",
+    description: "Product, AI, and design — portfolio of Haya AlMajali.",
+    images: ["/profile.JPG"],
+  },
 };
-*/}
 
 export default function RootLayout({
   children,

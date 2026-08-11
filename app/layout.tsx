@@ -5,10 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hayamaj.com"),
   title: "Haya AlMajali",
-  description: "Product, AI, and design — portfolio of Haya AlMajali.",
+  description: "Product, AI, and data. Portfolio of Haya AlMajali.",
   openGraph: {
     title: "Haya AlMajali",
-    description: "Product, AI, and design — portfolio of Haya AlMajali.",
+    description: "Product, AI, and data. Portfolio of Haya AlMajali.",
     url: "https://hayamaj.com",
     siteName: "Haya AlMajali",
     images: ["/profile.JPG"],
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Haya AlMajali",
-    description: "Product, AI, and design — portfolio of Haya AlMajali.",
+    description: "Product, AI, and data. Portfolio of Haya AlMajali.",
     images: ["/profile.JPG"],
   },
 };

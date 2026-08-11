@@ -53,15 +53,16 @@ const About = () => {
       <div className="flex flex-col gap-3">
         <h2 className="text-base font-medium text-black">Currently</h2>
         <p className="text-base leading-relaxed text-neutral-600">
-          Somewhere between product, AI, and data. Mostly thinking about what gets{" "}
+          Somewhere between product, AI, and data. Interested in what gets lost as models scale, and
+          what remains distinctly{" "}
           <motion.span
             className={`inline-block italic text-black ${lora.className}`}
             animate={{ opacity: [0.35, 1, 0.35] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           >
-            lost
-          </motion.span>{" "}
-          when models scale, and how you&apos;d catch it.
+            human
+          </motion.span>
+          .
         </p>
         <button
           type="button"
